@@ -1,4 +1,3 @@
-// redirect.js
 (function() {
     var redirectMap = {
       '/pae-docs': '/pae-docs/fr/',
@@ -9,8 +8,18 @@
     };
     
     var path = window.location.pathname;
-    var redirect = redirectMap[path];
-    if (redirect) {
-      window.location.href = redirect;
+    
+    // Check for exact matches first
+    if (redirectMap[path]) {
+      window.location.href = redirectMap[path];
+      return;
     }
-  })();
+    
+    // If no exact match, check for partial matches
+    for (var key in redirectMap) {
+      if (path.startsWith(key)) {
+        window.location.href = redirectMap[key];
+        return;
+      }
+    }
+})();
