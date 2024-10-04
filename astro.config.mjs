@@ -63,15 +63,9 @@ export default defineConfig({
       }),
     ],
     redirects: {
-        // '/': '/fr/',
-        // '/guides': '/fr/guides/',
-        // '/fr/guides': '/fr/guides/',
-        // '/en/guides': '/en/guides/',
-        '/pae-docs': '/pae-docs/fr/',
-        '/pae-docs/': '/pae-docs/fr/',
-        '/pae-docs/guides': '/pae-docs/fr/guides/',
-        '/pae-docs/fr/guides': '/pae-docs/fr/guides/',
-        '/pae-docs/en/guides': '/pae-docs/en/guides/',
+        '/pae-docs/guides': '/pae-docs/fr/',
+        '/pae-docs/fr/guides': '/pae-docs/fr/',
+        '/pae-docs/en/guides': '/pae-docs/en/',
     },
     devToolbar: {
         enabled: false,
