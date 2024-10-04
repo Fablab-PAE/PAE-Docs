@@ -39,8 +39,7 @@ export default defineConfig({
                   'fr': 'Machine CNC',
                   'en': 'CNC Machine',
                 },
-                //link: '/guides/cnc-machine/',
-                link: '/pae-docs/guides/cnc-machine/',
+                link: '/guides/cnc-machine/',
               },
             //   {
             //     label: 'Example Guide',
