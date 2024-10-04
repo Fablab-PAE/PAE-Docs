@@ -4,25 +4,68 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
-});
+    integrations: [
+      starlight({
+        title: '',
+        logo: {
+            src: './src/assets/logo_robotic.svg',
+          },
+        // social: {
+        //   github: 'https://github.com/withastro/starlight',
+        // },
+        defaultLocale: 'fr',
+        locales: {
+          'fr': {
+            label: 'Français',
+            lang: 'fr',
+          },
+          'en': {
+            label: 'English',
+          },
+        },
+        sidebar: [
+          {
+            label: 'Guides',
+            translations: {
+              'fr': 'Guides',
+              'en': 'Guides',
+            },
+            items: [
+              {
+                label: 'CNC Machine Guide',
+                translations: {
+                  'fr': 'Machine CNC',
+                  'en': 'CNC Machine',
+                },
+                link: '/guides/cnc-machine/',
+              },
+            //   {
+            //     label: 'Example Guide',
+            //     translations: {
+            //       'fr': 'Guide Demo',
+            //       'en': 'Demo Guide',
+            //     },
+            //     link: '/guides/example/',
+            //   },
+            ],
+          },
+        //   {
+        //     label: 'Additional documents',
+        //     translations: {
+        //       'en': 'Additional documents',
+        //       'fr': 'Documents additionnels',
+        //     },
+        //     autogenerate: { directory: 'reference' },
+        //   },
+        ],
+      }),
+    ],
+    redirects: {
+        '/': '/fr',
+        '/fr/guides': '/fr',
+        '/en/guides': '/en',
+    },
+    devToolbar: {
+        enabled: false,
+    },
+  });
