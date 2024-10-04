@@ -68,8 +68,9 @@ export default defineConfig({
         // '/pae-docs/fr/guides': '/pae-docs/fr',
         // '/pae-docs/en/guides': '/pae-docs/en',
         '/': '/fr/',
-        '/fr/guides': '/fr/',
-        '/en/guides': '/en/',
+        '/guides': '/fr/guides/',
+        '/fr/guides': '/fr/guides/',
+        '/en/guides': '/en/guides/',
     },
     devToolbar: {
         enabled: false,
