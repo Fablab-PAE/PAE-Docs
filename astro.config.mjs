@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://fablab-pae.github.io',
+    base: '/pae-docs',
     integrations: [
       starlight({
         title: '',
@@ -68,4 +70,4 @@ export default defineConfig({
     devToolbar: {
         enabled: false,
     },
-  });
+});
