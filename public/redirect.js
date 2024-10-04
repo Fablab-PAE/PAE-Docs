@@ -9,6 +9,16 @@
     
     var path = window.location.pathname;
     
+    // Function to check if the current path is already a destination
+    function isDestinationPath(path) {
+      return Object.values(redirectMap).some(dest => path.startsWith(dest));
+    }
+
+    // Don't redirect if we're already at a destination path
+    if (isDestinationPath(path)) {
+      return;
+    }
+
     // Check for exact matches first
     if (redirectMap[path]) {
       window.location.href = redirectMap[path];
