@@ -10,7 +10,9 @@ export default defineConfig({
       starlight({
         title: '',
         logo: {
-            src: './src/assets/logo_robotic.svg',
+            // src: './src/assets/logo_robotic_light.svg',
+            light: './src/assets/logo_robotic_light.svg',
+            dark: './src/assets/logo_robotic_dark.svg',
           },
         // social: {
         //   github: 'https://github.com/withastro/starlight',
