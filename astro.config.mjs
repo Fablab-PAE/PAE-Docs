@@ -25,6 +25,14 @@ export default defineConfig({
             label: 'English',
           },
         },
+        head: [
+            {
+              tag: 'script',
+              attrs: {
+                src: '/pae-docs/redirect.js',
+              },
+            },
+        ],
         sidebar: [
           {
             label: 'Guides',
@@ -62,11 +70,13 @@ export default defineConfig({
         ],
       }),
     ],
-    redirects: {
-        '/pae-docs/guides': '/pae-docs/fr/',
-        '/pae-docs/fr/guides': '/pae-docs/fr/',
-        '/pae-docs/en/guides': '/pae-docs/en/',
-    },
+    // redirects: {
+    //     '/pae-docs': '/pae-docs/fr/',
+    //     '/pae-docs/': '/pae-docs/fr/',
+    //     '/pae-docs/guides': '/pae-docs/fr/',
+    //     '/pae-docs/fr/guides': '/pae-docs/fr/',
+    //     '/pae-docs/en/guides': '/pae-docs/en/',
+    // },
     devToolbar: {
         enabled: false,
     },
