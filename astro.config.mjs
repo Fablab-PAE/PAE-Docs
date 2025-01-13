@@ -51,6 +51,30 @@ export default defineConfig({
                 },
                 link: '/guides/cnc-machine/',
               },
+              {
+                label: 'Laser Engraving Guide',
+                translations: {
+                  'fr': 'Gravure Laser',
+                  'en': 'Laser Engraving',
+                },
+                link: '/guides/gravure-laser/',
+              },
+              {
+                label: 'Vinyl Cutter Guide',
+                translations: {
+                  'fr': 'Découpe Vinyle',
+                  'en': 'Vinyl Cutter',
+                },
+                link: '/guides/decoupe-vinyle/',
+              },
+              {
+                label: '3D Printing Guide',
+                translations: {
+                  'fr': 'Impression 3D',
+                  'en': '3D Printing',
+                },
+                link: '/guides/impression-3d/',
+              },
             //   {
             //     label: 'Example Guide',
             //     translations: {
@@ -72,13 +96,6 @@ export default defineConfig({
         ],
       }),
     ],
-    // redirects: {
-    //     '/pae-docs': '/pae-docs/fr/',
-    //     '/pae-docs/': '/pae-docs/fr/',
-    //     '/pae-docs/guides': '/pae-docs/fr/',
-    //     '/pae-docs/fr/guides': '/pae-docs/fr/',
-    //     '/pae-docs/en/guides': '/pae-docs/en/',
-    // },
     devToolbar: {
         enabled: false,
     },
