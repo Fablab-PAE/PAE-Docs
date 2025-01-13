@@ -18,8 +18,8 @@ Ce guide vous accompagne pas à pas dans l'utilisation de la machine CNC Shapeok
 
 ## Référence matérielle
 
-- Modèle de machine CNC utilisée : <a href="../../../../public/pdf/shapeoko3_assembly_guide.pdf" target="_blank" rel="noopener noreferrer">Shapeoko 3</a>
-- Toupie compacte industrielle utilisée : **DEWALT DWP611** (<a href="../../../../public/pdf/dwp611.pdf" target="_blank" rel="noopener noreferrer">Manuel d'utilisation</a>)
+- Modèle de machine CNC utilisée : <a href="https://raw.githubusercontent.com/Fablab-PAE/pae-docs/main/public/pdf/shapeoko3_assembly_guide.pdf" target="_blank" rel="noopener noreferrer">Shapeoko 3</a>
+- Toupie compacte industrielle utilisée : **DEWALT DWP611** (<a href="https://raw.githubusercontent.com/Fablab-PAE/pae-docs/main/public/pdf/dwp611.pdf" target="_blank" rel="noopener noreferrer">Manuel d'utilisation</a>)
 
 - Modèle de machine CNC utilisée : <a href="/pdf/shapeoko3_assembly_guide.pdf" target="_blank" rel="noopener noreferrer">Shapeoko 3</a>
 - Toupie compacte industrielle utilisée : **DEWALT DWP611** (<a href="/pdf/dwp611.pdf" target="_blank" rel="noopener noreferrer">Manuel d'utilisation</a>)
