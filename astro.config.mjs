@@ -55,7 +55,7 @@ export default defineConfig({
                 label: 'Laser Engraving Guide',
                 translations: {
                   'fr': 'Gravure Laser',
-                  'en': 'Laser Engraving',
+                  'en': 'Laser Engraver',
                 },
                 link: '/guides/gravure-laser/',
               },
